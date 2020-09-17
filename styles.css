@@ -1,0 +1,132 @@
+/* typology */
+body{
+    font-family: font-family: "Gill Sans", sans-serif;
+    margin: 0;
+}
+
+*:focus{
+    background: #fff;
+    opacity: 1;
+    outline: none;
+}
+
+
+/* styles  */
+.container{
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgba(22, 22, 22, 0.378);
+}
+
+.container-bg{
+    transition : all 2s linear;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container-quote{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 468px;
+    max-width: 700px;
+    min-height:  390px;
+    align-items: center;
+    padding: 10px;
+}
+
+.title{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 5rem 0 2rem 0;
+}
+
+.input-card-create{
+    width: 100%;
+    text-align: center;
+    height: 2em;
+    padding: 6px;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 3em;
+    color: #333333;
+    opacity: 0.6;
+}
+
+.btn-card-create{
+    width: 45%;
+    height: 2em;
+    margin-top: 1.5em;
+    text-align: center;
+    height: 2em;
+    font-size: 1.1rem;
+    border: 0px;
+    cursor: unset;
+    border-radius: 3em;
+    background: none;
+    border: 1px solid #18B9CB;
+    color: #fff;
+}
+
+.btn-card-create-active {
+    cursor: pointer;
+    transition : all 0.4s linear;
+}
+
+.btn-card-create-active:hover{
+    border: none;
+    background: #6d4298;
+    transition : all 0.4s linear;
+}
+
+.container-cards{
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    padding: 0.5em;
+    background: #6d4298 ;
+    color: #FFFFFF ;
+    width:90%;
+    text-align: center;
+    font-size: 1.2rem;
+    word-break:break-all; 
+}
+
+@media (max-width: 800px){
+    .container-quote{
+        width: 95%;
+        max-width: 468px;
+        min-width: 245px;
+        min-height: 340px;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .input-card-create{
+        height: 2em;
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .btn-card-create{
+        width: 100%;
+        font-size: 1rem;
+        height: 2rem;
+    }
+}

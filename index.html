@@ -1,0 +1,48 @@
+<!-- This is Developed by Thilina Dilhara [ hdilhara@gmail.com ] ...   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Quote colorizer</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-quote">
+            <p class="title">Quote colorizer</p class="title">
+            <input class="input-card-create" id="cardContentInput" type="text" placeholder="Your awasome quote">
+            <button type="submit" class="btn-card-create btn-card-create-disabled" id="btn-submit">Colorize</button>
+
+            <div class="container-cards" id="container-cards">
+                <!-- all the cards rendered here -->
+            </div>
+
+        </div>
+        <video class="container-bg" id="containerBg" autoplay muted loop poster="loadingImg.png">
+            <source src="./resources/WaterCaustics.mp4" type="video/mp4" autocomplete="off">
+        </video>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        /*When Page load styles changes*/
+        window.addEventListener('load', function () {
+            count = 0;
+            backgroundVideoOpacity = document.getElementById('containerBg');
+            var opacityUp = setInterval(() => {
+                backgroundVideoOpacity.style.opacity = count;
+                count += 0.1;
+                if (count >= 1)
+                    clearInterval(opacityUp);
+            }, 2)
+        })
+    </script>
+</body>
+
+</html>
