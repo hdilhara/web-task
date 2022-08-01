@@ -37,7 +37,7 @@ jobs:
           echo test, and deploy your project.
           git status
           git branch
-          git diff testPR --name-only
+          git diff --name-only
           
           
       # Install Salesforce CLI
