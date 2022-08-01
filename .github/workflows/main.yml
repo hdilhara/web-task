@@ -37,6 +37,13 @@ jobs:
           echo test, and deploy your project.
           git status
           git branch
+          v1=$(git diff test --name-only)
+          v2="${v1//$'\n'/;}"
+          files=(`echo $v2 | tr ';' ' '`)
+          for file in "${files[@]}"
+          do
+              printf "$file\n"
+          done
           
       # Install Salesforce CLI
       - name: Install Salesforce CLI
