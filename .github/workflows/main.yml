@@ -42,3 +42,8 @@ jobs:
             mkdir sfdx-cli
             tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
             ./sfdx-cli/install
+            
+      #login to Salesforce
+      - name: login to salesforce
+        run: |
+            sf login
