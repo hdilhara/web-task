@@ -30,7 +30,8 @@ jobs:
     # For additional configuration options visit the action within the marketplace: https://github.com/marketplace/actions/datadog-synthetics-ci
     - name: Run Datadog Synthetic tests
       run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo Hello Thilina !!! ,
+          echo This is the working directory:
+          pwd
 
 
