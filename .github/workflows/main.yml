@@ -44,6 +44,13 @@ jobs:
             tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
             ./sfdx-cli/install
             
+      - name: Get Commit Difference Count Between Two Branches
+            id: cdc
+            uses: jessicalostinspace/commit-difference-action@v1.0.0
+            with:
+              base-branch: 'testPR' 
+              secondary-branch: 'master'
+            
       #login to Salesforce
      # - name: login to salesforce
        # run: |
