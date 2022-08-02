@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Hello Shashika
           pwd
+          git pull
           git branch -a
           
       # Install Salesforce CLI
