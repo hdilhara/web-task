@@ -38,6 +38,11 @@ jobs:
           git status
           git branch
           #git diff --name-only testPR
+          cd ~/
+          git clone https://github.com/hdilhara/web-task.git
+          ls
+          cd web-task
+          pwd
           
           
       # Install Salesforce CLI
