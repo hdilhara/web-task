@@ -34,16 +34,7 @@ jobs:
         run: |
           echo Hello Shashika
           pwd
-          echo test, and deploy your project.
-          git status
-          git branch
-          #git diff --name-only testPR
-          cd ~/
-          git clone https://github.com/hdilhara/web-task.git
-          ls
-          cd web-task
-          pwd
-          git branch
+          git diff origin/testPR --name-only
           
       # Install Salesforce CLI
       - name: Install Salesforce CLI
