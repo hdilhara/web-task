@@ -43,7 +43,7 @@ jobs:
           ls
           cd web-task
           pwd
-          
+          git branch
           
       # Install Salesforce CLI
       - name: Install Salesforce CLI
