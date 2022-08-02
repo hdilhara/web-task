@@ -34,7 +34,7 @@ jobs:
         run: |
           echo Hello Shashika
           pwd
-          git diff origin/testPR --name-only
+          git branch -a
           
       # Install Salesforce CLI
       - name: Install Salesforce CLI
